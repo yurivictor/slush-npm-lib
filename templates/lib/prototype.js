@@ -21,6 +21,7 @@ const app = exports = module.exports = {};
  * @private
  */
 app.init = function init () {
+  this.settings = {};
   this.defaultConfiguration();
 };
 
