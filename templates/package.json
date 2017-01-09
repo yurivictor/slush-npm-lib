@@ -1,0 +1,30 @@
+{
+  "name": "<%= appName %>",
+  "version": "<%= appVersion %>",
+  "description": "<%= appDescription %>",
+  "homepage": "https://github.com/<%= userName %>/<%= appName %>",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "start": "node index.js"
+  },
+  "author": {
+      "name": "<%= authorName %>",
+      "email": "<%= authorEmail %>"
+  },
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/<%= userName %>/<%= appName %>.git"
+  },
+  "bugs": {
+      "url": "https://github.com/<%= userName %>/<%= appName %>/issues"
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "merge-descriptors": "latest"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "mocha": "latest"
+  }
+}
