@@ -1,195 +1,24 @@
-# Contributing to npm-lib
+# Contributing to this project
 
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
+The following guidelines should be adhered to whenever contributing to this open source project.
 
-Following these guidelines helps to communicate that you respect the time of
-the developers managing and developing this open source project. In return,
-they should reciprocate that respect in addressing your issue or assessing
-patches and features.
+## Contribution guidelines
 
+You may send a pull request for bug fixes or small suggestions. Be specific in the pull request about what the fix does and why. For feature requests, first create an issue to start a conversation about it; clearly explain the use case for the feature that you are requesting. Be sure to review the code of conduct before contributing.
 
-## Using the issue tracker
+If you have questions about how to contribute or the code of conduct, please reach out to hi@yurivictor.com
 
-The issue tracker is the preferred channel for [bug reports](#bug-reports),
-[features requests](#feature-requests) and [submitting pull
-requests](#pull-requests), but please respect the following restrictions:
+## Code of conduct
 
-* Please **do not** use the issue tracker for personal support requests (use
-  [Stack Overflow](http://stackoverflow.com) or IRC).
+I aim to make my open source work a welcoming and harassment-free community for people of all races, gender and trans statuses, sexual orientations, physical abilities, physical appearances, and beliefs. I provide this code of conduct not because I anticipate bad behavior from our community—which, in my experience, is overwhelmingly kind and civil—but because I believe a clear code of conduct is a necessary part of building a respectful community space.
 
-* Please **do not** derail or troll issues. Keep the discussion on topic and
-  respect the opinions of others.
+If you contribute to this repository, you agree to:
 
+* Be welcoming, friendly, and patient.
+* Be considerate. Your work will be used by other people, and you in turn will depend on the work of others.
+* Refrain from demeaning, discriminating, or harassing behavior or speech. Harassment includes but is not limited to: violent threats or language; use of sexual or discriminatory imagery, language, or jokes; unwelcome sexual attention; posting or threatening to post other people’s personally identifying information (i.e., “doxing”); as well as advocating for or encouraging any of the above behavior.
+* Take care of each other. If you notice any violations of this code of conduct, even if they seem inconsequential, send a note to hi@yurivictor.com.
 
-## Bug reports
+If any contributor engages in harassing behavior, I may take any lawful action I deem appropriate, including warning the offender or blocking them from the repository. (If you feel you have been unfairly accused of violating this code of conduct, you should contact hi@yurivictor.com with a concise description of your grievance.)
 
-A bug is a _demonstrable problem_ that is caused by the code in the repository.
-Good bug reports are extremely helpful - thank you!
-
-Guidelines for bug reports:
-
-1. **Use the GitHub issue search** &mdash; check if the issue has already been
-   reported.
-
-2. **Check if the issue has been fixed** &mdash; try to reproduce it using the
-   latest `master` or development branch in the repository.
-
-3. **Isolate the problem** &mdash; create a [reduced test
-   case](http://css-tricks.com/6263-reduced-test-cases/) and a live example.
-
-A good bug report shouldn't leave others needing to chase you up for more
-information. Please try to be as detailed as possible in your report. What is
-your environment? What steps will reproduce the issue? What browser(s) and OS
-experience the problem? What would you expect to be the outcome? All these
-details will help people to fix any potential bugs.
-
-Example:
-
-> Short and descriptive example bug report title
->
-> A summary of the issue and the browser/OS environment in which it occurs. If
-> suitable, include the steps required to reproduce the bug.
->
-> 1. This is the first step
-> 2. This is the second step
-> 3. Further steps, etc.
->
-> `<url>` - a link to the reduced test case
->
-> Any other information you want to share that is relevant to the issue being
-> reported. This might include the lines of code that you have identified as
-> causing the bug, and potential solutions (and your opinions on their
-> merits).
-
-
-## Feature requests
-
-Feature requests are welcome. But take a moment to find out whether your idea
-fits with the scope and aims of the project. It's up to *you* to make a strong
-case to convince the project's developers of the merits of this feature. Please
-provide as much detail and context as possible.
-
-
-## Pull requests
-
-Good pull requests - patches, improvements, new features - are a fantastic
-help. They should remain focused in scope and avoid containing unrelated
-commits.
-
-**Please ask first** before embarking on any significant pull request (e.g.
-implementing features, refactoring code, porting to a different language),
-otherwise you risk spending a lot of time working on something that the
-project's developers might not want to merge into the project.
-
-Please adhere to the coding conventions used throughout a project (indentation,
-accurate comments, etc.) and any other requirements (such as test coverage).
-
-Follow this process if you'd like your work considered for inclusion in the
-project:
-
-1. [Fork](http://help.github.com/fork-a-repo/) the project, clone your fork,
-   and configure the remotes:
-
-   ```bash
-   # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/slush-npm-lib
-   # Navigate to the newly cloned directory
-   cd slush-npm-lib
-   # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/yurivictor/slush-npm-lib
-   ```
-
-2. If you cloned a while ago, get the latest changes from upstream:
-
-   ```bash
-   git checkout <dev-branch>
-   git pull upstream <dev-branch>
-   ```
-
-3. Create a new topic branch (off the main project development branch) to
-   contain your feature, change, or fix:
-
-   ```bash
-   git checkout -b <topic-branch-name>
-   ```
-
-4. Commit your changes in logical chunks. Please adhere to these [git commit
-   message guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your code is unlikely be merged into the main project. Use Git's
-   [interactive rebase](https://help.github.com/articles/interactive-rebase)
-   feature to tidy up your commits before making them public.
-
-5. Locally merge (or rebase) the upstream development branch into your topic branch:
-
-   ```bash
-   git pull [--rebase] upstream <dev-branch>
-   ```
-
-6. Push your topic branch up to your fork:
-
-   ```bash
-   git push origin <topic-branch-name>
-   ```
-
-7. [Open a Pull Request](https://help.github.com/articles/using-pull-requests/)
-    with a clear title and description.
-
-## Conventions of commit messages
-
-Adding files on repo
-
-```bash
-git commit -m "Add filename"
-```
-
-Updating files on repo
-
-```bash
-git commit -m "Update filename, filename2, filename3"
-```
-
-Removing files on repo
-
-```bash
-git commit -m "Remove filename"
-```
-
-Renaming files on repo
-
-```bash
-git commit -m "Rename filename"
-```
-
-Fixing errors and issues on repo
-
-```bash
-git commit -m "Fixed #issuenumber Message about this fix"
-```
-
-Adding features on repo
-
-```bash
-git commit -m "Add Feature: nameoffeature Message about this feature"
-```
-
-Updating features on repo
-
-```bash
-git commit -m "Update Feature: nameoffeature Message about this update"
-```
-
-Removing features on repo
-
-```bash
-git commit -m "Remove Feature: nameoffeature Message about this"
-```
-
-Ignoring Travis CI build on repo
-
-```bash
-git commit -m "Commit message here [ci-skip]"
-```
-
-**IMPORTANT**: By submitting a patch, you agree to allow the project owner to
-license your work under the same license as that used by the project.
+(Credit to the [SRCCON](http://srccon.org/conduct/) and [Django project](https://www.djangoproject.com/conduct/) code of conducts from which I've extensively borrowed.)

@@ -1,4 +1,4 @@
-# Slush Npm-lib [![Build Status](https://secure.travis-ci.org/yurivictor/slush-npm-lib.png?branch=master)](https://travis-ci.org/yurivictor/slush-npm-lib) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-npm-lib.png)](http://badges.enytc.com/for/npm/slush-npm-lib)
+# Slush Npm-lib
 
 > Scaffolds npm library
 
